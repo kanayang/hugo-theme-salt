@@ -18,7 +18,7 @@
             {{ if not $paginator.HasPrev  }}
                 {{ with .Site.Taxonomies.pickups.top  }}
                     <div class="index__titleWrapper">
-                        <h1 class="index__title--pickup">Pick up</h1>
+                        <h1 class="index__title--pickup">特集記事</h1>
                     </div>
                     <div class="index__articleCardList">
                         {{ range .Pages }}
@@ -29,7 +29,7 @@
             {{ end }}
 
             <div class="index__titleWrapper">
-                <h1 class="index__title">New Article</h1>
+                <h1 class="index__title">新着記事</h1>
             </div>
             <div class="index__articleCardList">
                 {{ range $paginator.Pages }}
