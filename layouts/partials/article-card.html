@@ -1,6 +1,6 @@
 <article class="partials__articleCard">
     <div class="partials__articleCard__inner">
-        <a href="{{ .Permalink }}" class="partials__articleCard__link"></a>
+        <a href="{{ .Permalink }}" class="partials__articleCard__link" aria-label="新着記事"></a>
         {{ $thumbnail := or
             (.Resources.GetMatch "thumbnail.*")
             (resources.Get .Params.thumbnail)
