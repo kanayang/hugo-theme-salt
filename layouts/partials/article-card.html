@@ -8,7 +8,7 @@
         }}
         {{ if $thumbnail }}
             {{ $thumbnail = $thumbnail.Fill (printf "640x360 center q%d webp" .Site.Params.imageQuality) }}
-            <img src='{{ $thumbnail.Permalink  }}' alt="{{ .Title }}" loading="lazy" class="partials__articleCard__thumbnail">
+            <img src='{{ $thumbnail.Permalink  }}' alt="" loading="lazy" class="partials__articleCard__thumbnail">
         {{ end }}
         <h2 class="partials__articleCard__title">
             {{ .Title }}
