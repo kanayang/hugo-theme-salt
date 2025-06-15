@@ -10,9 +10,9 @@
             {{ $thumbnail = $thumbnail.Fill (printf "640x360 center q%d webp" .Site.Params.imageQuality) }}
             <img src='{{ $thumbnail.Permalink  }}' alt="{{ .Title }}" loading="lazy" class="partials__articleCard__thumbnail">
         {{ end }}
-        <h4 class="partials__articleCard__title">
+        <h2 class="partials__articleCard__title">
             {{ .Title }}
-        </h4>
+        </h2>
         <div class="partials__articleCard__detail">
             {{ with .Params.categories }}
                 <a href="{{ "categories" | relURL }}/{{ . }}">
