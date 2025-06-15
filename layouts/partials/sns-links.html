@@ -1,12 +1,12 @@
 {{ $link := .link }}
 <div class="partials__snsLinks">
     {{ if $link.twitter }}
-        <a href="https://x.com/{{ $link.twitter }}" target="_blank" class="partials__snsLinks__link--twitter">
+        <a href="https://x.com/{{ $link.twitter }}" target="_blank" class="partials__snsLinks__link--twitter" title="X(Twitter)">
             <i class="fa-lg fab fa-x-twitter"></i>
         </a>
     {{ end }}
     {{ if $link.instagram }}
-        <a href="https://www.instagram.com/{{ $link.instagram }}" target="_blank" class="partials__snsLinks__link--instagram">
+        <a href="https://www.instagram.com/{{ $link.instagram }}" target="_blank" class="partials__snsLinks__link--instagram" title="Instagram">
             <i class="fa-lg fab fa-instagram"></i>
         </a>
     {{ end }}
@@ -16,7 +16,7 @@
         </a>
     {{ end }}
     {{ if $link.youtube }}
-        <a href="{{ $link.youtube }}" target="_blank" class="partials__snsLinks__link--youtube">
+        <a href="{{ $link.youtube }}" target="_blank" class="partials__snsLinks__link--youtube" title="YouTube">
             <i class="fa-lg fab fa-youtube"></i>
         </a>
     {{ end }}
