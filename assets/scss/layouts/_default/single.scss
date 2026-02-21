@@ -93,6 +93,7 @@
                 white-space: nowrap;
             }
             &.markdown-body {
+                background-color: #fff;
                 color: $base-font-color;
                 pre, table {
                     background: #f6f8fa;
