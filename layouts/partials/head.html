@@ -28,7 +28,7 @@
             (resources.Get .Params.thumbnail)
         -}}
         {{- if $thumbnail -}}
-            {{- $og_image_url = ($thumbnail.Fill (printf "1200x630 center q%d webp" .Site.Params.imageQuality)).Permalink -}}
+            {{- $og_image_url = ($thumbnail.Fill (printf "1200x630 center q%d jpg" .Site.Params.imageQuality)).Permalink -}}
         {{- end -}}
     {{- end -}}
 
